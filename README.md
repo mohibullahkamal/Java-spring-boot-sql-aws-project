@@ -1,3 +1,5 @@
+This project is under development and therefore not complete...
+
 # Java-spring-boot-sql-aws-project
  Full-stack web development using 
  1. Spring Core, 
