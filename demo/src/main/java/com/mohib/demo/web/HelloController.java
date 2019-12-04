@@ -1,4 +1,4 @@
-package com.mohib.demo;
+package com.mohib.demo.web;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
