@@ -1,6 +1,10 @@
 package com.mohib.demo.web;
 
+import java.util.Date;
+
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -8,4 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 public class UserController {
 
+	@RequestMapping("/{userId}")
+	public String displayUser(@PathVariable int userId) {
+		return "User Found: " + userId;
+	}
+	
+	@RequestMapping("/{userId}/invoices")
+	public String displayUserInvoice(@PathVariable int userId, @RequestParam Date date) {
+		return "User Found: " + userId;
+	}
 }
