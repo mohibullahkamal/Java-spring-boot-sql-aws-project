@@ -19,6 +19,6 @@ public class UserController {
 	
 	@RequestMapping("/{userId}/invoices")
 	public String displayUserInvoice(@PathVariable int userId, @RequestParam Date date) {
-		return "User Found: " + userId;
+		return "Invoice found for user : " + userId + " on the date: " + date;
 	}
 }
